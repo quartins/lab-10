@@ -10,9 +10,8 @@ int main(){
 	do{
 		cout << "Student [" << i << "]: ";
 		cin >> grade;
-		i++;
 
-		if(grade == '0') break;ATOMIC_BOOL_LOCK_FREE
+		if(grade == '0') break;
 
 		if(grade == 'A')
 			count[0]++;
@@ -24,11 +23,11 @@ int main(){
 			count[3]++;
 		else if(grade == 'F')
 			count[4]++;
-		else{ //
+		else{
 			cout << "Wrong input. Please input again."<<endl;
 			i--;
 		} 
-
+	i++;
 	}while(true);
 	
 	cout << "In total "<< i-1 <<" students."<<endl;
